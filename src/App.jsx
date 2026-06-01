@@ -5,9 +5,9 @@ import {
   Cpu,
   Database,
   Download,
+  ExternalLink,
   FileText,
   Github,
-  GraduationCap,
   Linkedin,
   Mail,
   Menu,
@@ -426,7 +426,7 @@ function Publications({ t }) {
               <p>{publication.description}</p>
             </div>
             <div className="publication-actions">
-              <a href="#" aria-label={`${t.aria.readPaper}: ${publication.title}`}>
+              <a href={publication.url} target="_blank" rel="noreferrer" aria-label={`${t.aria.readPaper}: ${publication.title}`}>
                 <FileText size={17} />
                 {t.publications.read}
               </a>
@@ -498,21 +498,21 @@ function Footer({ t, year }) {
         <p>© {year} Reinan Lopes Argolo · {t.footer.copyright}</p>
       </div>
       <div className="footer-links">
-        <a href="https://github.com/" target="_blank" rel="noreferrer">
+        <a href="https://github.com/reinanargolo" target="_blank" rel="noreferrer">
           <Github size={18} />
           GitHub
         </a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/reinanargolo" target="_blank" rel="noreferrer">
           <Linkedin size={18} />
           LinkedIn
         </a>
-        <a href="mailto:reinan@example.com">
+        <a href="mailto:rlargolo.cic@uesc.br">
           <Mail size={18} />
           Email
         </a>
-        <a href="#research">
-          <GraduationCap size={18} />
-          {t.footer.research}
+        <a href="https://orcid.org/0009-0002-8336-0927" target="_blank" rel="noreferrer">
+          <ExternalLink size={18} />
+          ORCID
         </a>
       </div>
     </footer>

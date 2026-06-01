@@ -128,6 +128,7 @@ export const content = {
           authors: 'Reinan Lopes Argolo, Lucas Santiago Carmo dos Santos, Susana Marrero Iglesias, Paulo Eduardo Ambrosio, Bianca Machado Righi',
           venue: 'XXVIII Encontro Nacional de Modelagem Computacional e XVI Encontro de Ciencia e Tecnologia de Materiais',
           year: '2026',
+          url: 'https://www.even3.com.br/anais/enmc-2025/1268156-modelo-computacional-para-inferencia-de-dinamicas-sociais-em-cetaceos-a-partir-de-dados-videograficos-aereos',
           description:
             'Trabalho sobre a extracao automatica de dinamicas espaco-temporais de baleias-jubarte a partir de filmagens aereas, articulando YOLOv8 para deteccao e DeepSORT para reconstrucao de trajetorias. DOI: 10.5281/zenodo.18938636.',
         },
@@ -136,6 +137,7 @@ export const content = {
           authors: 'Reinan Lopes Argolo, Paulo Eduardo Ambrosio, Bianca Machado Righi, Susana Marrero Iglesias',
           venue: '2025 15th IEEE International Conference on Pattern Recognition Systems (ICPRS)',
           year: '2025',
+          url: 'https://doi.org/10.1109/ICPRS66293.2025.11302860',
           description:
             'Artigo publicado no IEEE ICPRS 2025 propondo um pipeline de visao computacional para deteccao, rastreamento multiobjeto e analise de interacoes de cetaceos em imagens de VANTs. DOI: 10.1109/ICPRS66293.2025.11302860.',
         },
@@ -292,6 +294,7 @@ export const content = {
           authors: 'Reinan Lopes Argolo, Lucas Santiago Carmo dos Santos, Susana Marrero Iglesias, Paulo Eduardo Ambrosio, Bianca Machado Righi',
           venue: 'XXVIII National Meeting on Computational Modeling and XVI Meeting on Materials Science and Technology',
           year: '2026',
+          url: 'https://www.even3.com.br/anais/enmc-2025/1268156-modelo-computacional-para-inferencia-de-dinamicas-sociais-em-cetaceos-a-partir-de-dados-videograficos-aereos',
           description:
             'A paper on automated extraction of spatio-temporal dynamics of humpback whales from aerial footage, combining YOLOv8 for detection and DeepSORT for trajectory reconstruction. DOI: 10.5281/zenodo.18938636.',
         },
@@ -300,6 +303,7 @@ export const content = {
           authors: 'Reinan Lopes Argolo, Paulo Eduardo Ambrosio, Bianca Machado Righi, Susana Marrero Iglesias',
           venue: '2025 15th IEEE International Conference on Pattern Recognition Systems (ICPRS)',
           year: '2025',
+          url: 'https://doi.org/10.1109/ICPRS66293.2025.11302860',
           description:
             'IEEE ICPRS 2025 paper proposing a computer vision pipeline for detection, multi-object tracking, and interaction analysis of cetaceans in UAV imagery. DOI: 10.1109/ICPRS66293.2025.11302860.',
         },
@@ -456,6 +460,7 @@ export const content = {
           authors: 'Reinan Lopes Argolo, Lucas Santiago Carmo dos Santos, Susana Marrero Iglesias, Paulo Eduardo Ambrosio, Bianca Machado Righi',
           venue: 'XXVIII Encuentro Nacional de Modelado Computacional y XVI Encuentro de Ciencia y Tecnologia de Materiales',
           year: '2026',
+          url: 'https://www.even3.com.br/anais/enmc-2025/1268156-modelo-computacional-para-inferencia-de-dinamicas-sociais-em-cetaceos-a-partir-de-dados-videograficos-aereos',
           description:
             'Trabajo sobre la extraccion automatizada de dinamicas espacio-temporales de ballenas jorobadas a partir de filmaciones aereas, combinando YOLOv8 para deteccion y DeepSORT para reconstruccion de trayectorias. DOI: 10.5281/zenodo.18938636.',
         },
@@ -464,6 +469,7 @@ export const content = {
           authors: 'Reinan Lopes Argolo, Paulo Eduardo Ambrosio, Bianca Machado Righi, Susana Marrero Iglesias',
           venue: '2025 15th IEEE International Conference on Pattern Recognition Systems (ICPRS)',
           year: '2025',
+          url: 'https://doi.org/10.1109/ICPRS66293.2025.11302860',
           description:
             'Articulo publicado en IEEE ICPRS 2025 que propone un pipeline de vision computacional para deteccion, rastreo multiobjeto y analisis de interacciones de cetaceos en imagenes de VANTs. DOI: 10.1109/ICPRS66293.2025.11302860.',
         },
