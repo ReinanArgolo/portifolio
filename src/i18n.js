@@ -30,37 +30,37 @@ export const content = {
     ],
     cvButton: 'CV / Resume',
     hero: {
-      status: 'Aberto a colaboracoes',
+      status: 'Bolsista CNPq ITI-A | Pesquisa ativa',
       name: 'Reinan Lopes Argolo',
-      kicker: 'Cientista da Computacao em formacao | Pesquisador em Machine Learning e Visao Computacional',
+      kicker: 'Graduando em Ciencia da Computacao na UESC | Pesquisador em IA, Visao Computacional e Sistemas Embarcados',
       description:
-        'Desenvolvo solucoes que conectam ciencia, inteligencia artificial e impacto real, com foco em visao computacional aplicada a pesquisa e conservacao.',
+        'Atuo no PPGMC-UESC com processamento de imagens, redes neurais e visao computacional aplicada a cetaceos, conectando pesquisa cientifica, codigo e conservacao marinha.',
       primaryAction: 'Ver projetos',
       secondaryAction: 'Ver pesquisa',
     },
     about: {
       eyebrow: 'Sobre',
-      title: 'Pesquisa aplicada com rigor de engenharia.',
+      title: 'Pesquisa aplicada entre ciencia, codigo e conservacao.',
       body:
-        'Sou estudante de Ciencia da Computacao interessado em construir sistemas inteligentes capazes de interpretar dados visuais complexos. Minha atuacao combina aprendizado de maquina, visao computacional e automacao para transformar pixels em evidencia cientifica.',
+        'Sou graduando em Ciencia da Computacao pela Universidade Estadual de Santa Cruz (UESC) e bolsista de Iniciacao Tecnologica e Industrial do CNPq. Tenho experiencia com C, Python, Java, JavaScript, React, Linux e sistemas embarcados. Atualmente integro um projeto de pesquisa com o Programa de Pos-Graduacao em Modelagem Computacional da UESC, usando redes neurais e processamento de imagens para analise automatizada de baleias-jubarte em videos aereos.',
       metrics: [
-        ['8+', 'areas tecnicas'],
-        ['6', 'frameworks de tracking'],
-        ['100%', 'foco em impacto real'],
+        ['2024', 'inicio da graduacao na UESC'],
+        ['2025+', 'pesquisa no PPGMC-UESC'],
+        ['2', 'trabalhos completos em anais'],
       ],
     },
     interests: {
       eyebrow: 'Foco',
       title: 'Areas de interesse',
       items: [
-        'Machine Learning',
+        'Inteligencia Artificial',
         'Deep Learning',
-        'Computer Vision',
+        'Visao Computacional',
+        'Processamento de Imagens',
         'Object Detection',
         'Multi-Object Tracking',
-        'Scientific Computing',
-        'Embedded Systems',
-        'Research Methods',
+        'Modelagem de Ambientes Maritimos',
+        'Sistemas Embarcados',
       ],
     },
     projects: {
@@ -68,40 +68,40 @@ export const content = {
       title: 'Projetos em destaque',
       items: [
         {
-          title: 'Projeto Baleias Jubarte',
-          label: 'Research',
+          title: 'Modelo Computacional para Dinamicas Sociais em Cetaceos',
+          label: 'Pesquisa',
           description:
-            'Deteccao e analise automatica de relacoes mae-filhote-escolta em imagens aereas com modelos de visao computacional.',
-          tags: ['YOLO', 'RT-DETR', 'UAV Imagery'],
+            'Projeto em andamento na UESC/PPGMC para inferir dinamicas sociais de baleias-jubarte a partir de dados videograficos aereos, combinando deteccao, rastreamento e analise de distancias entre individuos.',
+          tags: ['YOLOv8', 'DeepSORT', 'UAV'],
           featured: true,
         },
         {
-          title: 'WhaleTracker',
-          label: 'Pipeline',
+          title: 'Pipeline de Rastreamento de Cetaceos em UAV',
+          label: 'ICPRS 2025',
           description:
-            'Processamento de videos brutos para gerar trajetorias, persistencia de identidade e metricas de conservacao marinha.',
-          tags: ['Python', 'MOT', 'OpenCV'],
+            'Pipeline de deep learning para deteccao, rastreamento multiobjeto e analise de interacoes de cetaceos em imagens aereas, publicado no IEEE ICPRS 2025.',
+          tags: ['Deep Learning', 'MOT', 'IEEE'],
         },
         {
-          title: 'Fermentacao do Cacau',
-          label: 'IoT',
+          title: 'Deteccao de Baleias Jubarte em Imagens de Drone',
+          label: 'SOLAMAC',
           description:
-            'Sistema embarcado para monitoramento termico e quimico aplicado a agricultura de precisao no sul da Bahia.',
-          tags: ['Embedded', 'Sensors', 'Linux'],
+            'Trabalho em colaboracao com o grupo de pesquisa sobre uso de inteligencia artificial para detectar baleias-jubarte em imagens de drone.',
+          tags: ['Computer Vision', 'Drone', 'Conservacao'],
         },
         {
-          title: 'Motor de Busca de Filmes',
-          label: 'Web',
+          title: 'Hackathon de Areas Queimadas',
+          label: 'WorCAP 25',
           description:
-            'Aplicacao React para descoberta de conteudo, integracao com APIs REST e experiencia responsiva de busca.',
-          tags: ['React', 'REST API', 'UX'],
+            'Apresentacao de trabalho sobre deteccao de areas queimadas a partir de imagens de satelite, conectando sensoriamento remoto e aprendizado de maquina.',
+          tags: ['Satellites', 'ML', 'Remote Sensing'],
         },
         {
-          title: 'Ferramenta de Compilacao em C',
-          label: 'Tooling',
+          title: 'Residencia EmbarcaTech',
+          label: 'Sistemas Embarcados',
           description:
-            'Automacao em shell script para compilar, testar e linkar projetos C com fluxo reproduzivel em Linux.',
-          tags: ['Shell', 'GCC', 'Automation'],
+            'Formacao de 160 horas em sistemas embarcados pelo CEPEDI, com foco em desenvolvimento tecnologico, automacao e computacao aplicada.',
+          tags: ['Embedded', 'CEPEDI', 'Linux'],
         },
       ],
     },
@@ -111,10 +111,10 @@ export const content = {
       modelsTitle: 'Modelos & Frameworks',
       status: 'status: ativo',
       items: [
-        'Deteccao de baleias em imagens aereas',
-        'Multi-Object Tracking em ambientes marinhos',
-        'Persistencia de identidade durante oclusoes',
-        'Metricas de conservacao orientadas por IA',
+        'Deteccao de baleias-jubarte em imagens aereas',
+        'Rastreamento multiobjeto em ambientes marinhos',
+        'Inferencia de dinamicas sociais em cetaceos',
+        'Transformacao de videos de VANTs em series temporais de posicoes e distancias',
       ],
     },
     publications: {
@@ -124,20 +124,20 @@ export const content = {
       cite: 'Citar',
       items: [
         {
-          title: 'Automatic Detection of Humpback Whales in UAV Images using Deep Learning',
-          authors: 'Reinan Lopes Argolo, et al.',
-          venue: 'International Journal of Marine Science & Technology',
-          year: '2024',
+          title: 'Modelo computacional para inferencia de dinamicas sociais em cetaceos a partir de dados videograficos aereos',
+          authors: 'Reinan Lopes Argolo, Lucas Santiago Carmo dos Santos, Susana Marrero Iglesias, Paulo Eduardo Ambrosio, Bianca Machado Righi',
+          venue: 'XXVIII Encontro Nacional de Modelagem Computacional e XVI Encontro de Ciencia e Tecnologia de Materiais',
+          year: '2026',
           description:
-            'Este trabalho propoe uma abordagem baseada em Redes Neurais Convolucionais para a deteccao automatizada de baleias-jubarte em imagens capturadas por drones, otimizando o tempo de processamento em levantamentos populacionais.',
+            'Trabalho sobre a extracao automatica de dinamicas espaco-temporais de baleias-jubarte a partir de filmagens aereas, articulando YOLOv8 para deteccao e DeepSORT para reconstrucao de trajetorias. DOI: 10.5281/zenodo.18938636.',
         },
         {
-          title: 'Multi-Object Tracking for Marine Conservation: Challenges and Opportunities',
-          authors: 'Reinan Lopes Argolo',
-          venue: 'Latin American Conference on Computer Vision',
-          year: '2023',
+          title: 'An Integrated Deep Learning Pipeline for Multi-Object Tracking and Interaction Analysis of Cetaceans in UAV Imagery',
+          authors: 'Reinan Lopes Argolo, Paulo Eduardo Ambrosio, Bianca Machado Righi, Susana Marrero Iglesias',
+          venue: '2025 15th IEEE International Conference on Pattern Recognition Systems (ICPRS)',
+          year: '2025',
           description:
-            'Uma analise aprofundada dos desafios tecnicos envolvidos no rastreamento de multiplos objetos em ambientes marinhos dinamicos, explorando o uso de algoritmos de MOT para monitoramento ambiental.',
+            'Artigo publicado no IEEE ICPRS 2025 propondo um pipeline de visao computacional para deteccao, rastreamento multiobjeto e analise de interacoes de cetaceos em imagens de VANTs. DOI: 10.1109/ICPRS66293.2025.11302860.',
         },
       ],
     },
@@ -147,22 +147,22 @@ export const content = {
       groups: [
         ['Languages', ['Python', 'C', 'C++', 'Java', 'JavaScript']],
         ['AI Stack', ['PyTorch', 'OpenCV', 'Ultralytics', 'NumPy', 'Pandas']],
-        ['Engineering', ['React', 'Docker', 'Linux', 'Git', 'LaTeX']],
+        ['Engineering', ['React', 'Linux', 'Git', 'LaTeX', 'Sistemas Embarcados']],
       ],
     },
     timeline: {
       eyebrow: 'Trajetoria',
       title: 'Timeline',
       items: [
-        ['START', 'CS Fundamentals', 'Algoritmos, estruturas de dados, sistemas operacionais e bases matematicas.'],
-        ['EXPLORATION', 'Artificial Intelligence', 'Primeiros projetos com ML, redes neurais e interfaces para dados.'],
-        ['CURRENT', 'Conservation Tech', 'Visao computacional para rastreamento de baleias e metricas ambientais.'],
+        ['2021-2023', 'Ensino Medio e lideranca estudantil', 'Formacao no Colegio Estadual Libia Tinoco Melo, com experiencias em lideranca estudantil e monitoria.'],
+        ['2024', 'Ciencia da Computacao na UESC', 'Inicio da graduacao em Ciencia da Computacao e desenvolvimento de base em programacao, matematica e engenharia de software.'],
+        ['2025+', 'Pesquisa em conservacao computacional', 'Atuacao como bolsista CNPq ITI-A em projeto do PPGMC-UESC sobre redes neurais, visao computacional e dinamicas sociais de cetaceos.'],
       ],
     },
     quote: {
       main: '"Was wir wissen ist ein Tropfen; was wir nicht wissen, ein Ozean."',
       translation:
-        '"Nao sei o que posso parecer para o mundo, mas para mim mesmo pareco ter sido apenas como um menino brincando na beira-mar, divertindo-me em encontrar de vez em quando uma pedra mais lisa ou uma concha mais bonita do que o normal, enquanto o grande oceano da verdade permanecia totalmente por descobrir diante de mim."',
+        '"O que sabemos e uma gota; o que ignoramos e um oceano."',
     },
     footer: {
       copyright: 'Ciencia, codigo e curiosidade',
@@ -194,37 +194,37 @@ export const content = {
     ],
     cvButton: 'CV / Resume',
     hero: {
-      status: 'Open for Collaboration',
+      status: 'CNPq ITI-A Fellow | Active research',
       name: 'Reinan Lopes Argolo',
-      kicker: 'Computer Scientist in Training | Machine Learning & Computer Vision Researcher',
+      kicker: 'Computer Science Undergraduate at UESC | AI, Computer Vision and Embedded Systems Researcher',
       description:
-        'I build solutions that connect science, artificial intelligence, and real-world impact, focused on computer vision applied to research and conservation.',
+        'I work with PPGMC-UESC on image processing, neural networks, and computer vision applied to cetaceans, connecting scientific research, code, and marine conservation.',
       primaryAction: 'View projects',
       secondaryAction: 'View research',
     },
     about: {
       eyebrow: 'About',
-      title: 'Applied research with engineering rigor.',
+      title: 'Applied research across science, code, and conservation.',
       body:
-        'I am a Computer Science student interested in building intelligent systems capable of interpreting complex visual data. My work combines machine learning, computer vision, and automation to turn pixels into scientific evidence.',
+        'I am a Computer Science undergraduate at the State University of Santa Cruz (UESC) and a CNPq Technological and Industrial Initiation fellow. I have experience with C, Python, Java, JavaScript, React, Linux, and embedded systems. I currently take part in a research project with UESC Graduate Program in Computational Modeling, using neural networks and image processing for automated analysis of humpback whales in aerial videos.',
       metrics: [
-        ['8+', 'technical areas'],
-        ['6', 'tracking frameworks'],
-        ['100%', 'real impact focus'],
+        ['2024', 'started Computer Science at UESC'],
+        ['2025+', 'research at PPGMC-UESC'],
+        ['2', 'full papers in proceedings'],
       ],
     },
     interests: {
       eyebrow: 'Focus',
       title: 'Areas of interest',
       items: [
-        'Machine Learning',
+        'Artificial Intelligence',
         'Deep Learning',
         'Computer Vision',
+        'Image Processing',
         'Object Detection',
         'Multi-Object Tracking',
-        'Scientific Computing',
+        'Maritime Environment Modeling',
         'Embedded Systems',
-        'Research Methods',
       ],
     },
     projects: {
@@ -232,40 +232,40 @@ export const content = {
       title: 'Featured projects',
       items: [
         {
-          title: 'Humpback Whale Project',
+          title: 'Computational Model for Social Dynamics in Cetaceans',
           label: 'Research',
           description:
-            'Automatic detection and analysis of mother-calf-escort relationships in aerial imagery using computer vision models.',
-          tags: ['YOLO', 'RT-DETR', 'UAV Imagery'],
+            'Ongoing UESC/PPGMC project for inferring humpback whale social dynamics from aerial video data by combining detection, tracking, and distance analysis between individuals.',
+          tags: ['YOLOv8', 'DeepSORT', 'UAV'],
           featured: true,
         },
         {
-          title: 'WhaleTracker',
-          label: 'Pipeline',
+          title: 'Cetacean Tracking Pipeline in UAV Imagery',
+          label: 'ICPRS 2025',
           description:
-            'Raw video processing to generate trajectories, identity persistence, and marine conservation metrics.',
-          tags: ['Python', 'MOT', 'OpenCV'],
+            'Deep learning pipeline for detection, multi-object tracking, and interaction analysis of cetaceans in aerial imagery, published at IEEE ICPRS 2025.',
+          tags: ['Deep Learning', 'MOT', 'IEEE'],
         },
         {
-          title: 'Cocoa Fermentation',
-          label: 'IoT',
+          title: 'Humpback Whale Detection in Drone Images',
+          label: 'SOLAMAC',
           description:
-            'Embedded system for thermal and chemical monitoring applied to precision agriculture in southern Bahia.',
-          tags: ['Embedded', 'Sensors', 'Linux'],
+            'Collaborative research on artificial intelligence for detecting humpback whales in drone images.',
+          tags: ['Computer Vision', 'Drone', 'Conservation'],
         },
         {
-          title: 'Movie Search Engine',
-          label: 'Web',
+          title: 'Burned Area Detection Hackathon',
+          label: 'WorCAP 25',
           description:
-            'React application for content discovery, REST API integration, and responsive search experience.',
-          tags: ['React', 'REST API', 'UX'],
+            'Work presentation on detecting burned areas from satellite imagery, connecting remote sensing and machine learning.',
+          tags: ['Satellites', 'ML', 'Remote Sensing'],
         },
         {
-          title: 'C Build Tool',
-          label: 'Tooling',
+          title: 'EmbarcaTech Residency',
+          label: 'Embedded Systems',
           description:
-            'Shell automation for compiling, testing, and linking C projects with reproducible Linux workflows.',
-          tags: ['Shell', 'GCC', 'Automation'],
+            'A 160-hour training program in embedded systems through CEPEDI, focused on technological development, automation, and applied computing.',
+          tags: ['Embedded', 'CEPEDI', 'Linux'],
         },
       ],
     },
@@ -275,10 +275,10 @@ export const content = {
       modelsTitle: 'Models & Frameworks',
       status: 'status: active',
       items: [
-        'Whale detection in aerial images',
-        'Multi-Object Tracking in marine environments',
-        'Identity persistence across occlusions',
-        'AI-driven conservation metrics',
+        'Humpback whale detection in aerial images',
+        'Multi-object tracking in marine environments',
+        'Inference of cetacean social dynamics',
+        'Transformation of UAV videos into time series of positions and distances',
       ],
     },
     publications: {
@@ -288,20 +288,20 @@ export const content = {
       cite: 'Cite',
       items: [
         {
-          title: 'Automatic Detection of Humpback Whales in UAV Images using Deep Learning',
-          authors: 'Reinan Lopes Argolo, et al.',
-          venue: 'International Journal of Marine Science & Technology',
-          year: '2024',
+          title: 'Modelo computacional para inferencia de dinamicas sociais em cetaceos a partir de dados videograficos aereos',
+          authors: 'Reinan Lopes Argolo, Lucas Santiago Carmo dos Santos, Susana Marrero Iglesias, Paulo Eduardo Ambrosio, Bianca Machado Righi',
+          venue: 'XXVIII National Meeting on Computational Modeling and XVI Meeting on Materials Science and Technology',
+          year: '2026',
           description:
-            'This work proposes a convolutional neural network approach for automated humpback whale detection in drone imagery, reducing processing time for population surveys.',
+            'A paper on automated extraction of spatio-temporal dynamics of humpback whales from aerial footage, combining YOLOv8 for detection and DeepSORT for trajectory reconstruction. DOI: 10.5281/zenodo.18938636.',
         },
         {
-          title: 'Multi-Object Tracking for Marine Conservation: Challenges and Opportunities',
-          authors: 'Reinan Lopes Argolo',
-          venue: 'Latin American Conference on Computer Vision',
-          year: '2023',
+          title: 'An Integrated Deep Learning Pipeline for Multi-Object Tracking and Interaction Analysis of Cetaceans in UAV Imagery',
+          authors: 'Reinan Lopes Argolo, Paulo Eduardo Ambrosio, Bianca Machado Righi, Susana Marrero Iglesias',
+          venue: '2025 15th IEEE International Conference on Pattern Recognition Systems (ICPRS)',
+          year: '2025',
           description:
-            'An in-depth analysis of the technical challenges involved in multi-object tracking in dynamic marine environments, exploring MOT algorithms for environmental monitoring.',
+            'IEEE ICPRS 2025 paper proposing a computer vision pipeline for detection, multi-object tracking, and interaction analysis of cetaceans in UAV imagery. DOI: 10.1109/ICPRS66293.2025.11302860.',
         },
       ],
     },
@@ -311,22 +311,22 @@ export const content = {
       groups: [
         ['Languages', ['Python', 'C', 'C++', 'Java', 'JavaScript']],
         ['AI Stack', ['PyTorch', 'OpenCV', 'Ultralytics', 'NumPy', 'Pandas']],
-        ['Engineering', ['React', 'Docker', 'Linux', 'Git', 'LaTeX']],
+        ['Engineering', ['React', 'Linux', 'Git', 'LaTeX', 'Embedded Systems']],
       ],
     },
     timeline: {
       eyebrow: 'Trajectory',
       title: 'Timeline',
       items: [
-        ['START', 'CS Fundamentals', 'Algorithms, data structures, operating systems, and mathematical foundations.'],
-        ['EXPLORATION', 'Artificial Intelligence', 'First projects with ML, neural networks, and data interfaces.'],
-        ['CURRENT', 'Conservation Tech', 'Computer vision for whale tracking and environmental metrics.'],
+        ['2021-2023', 'High school and student leadership', 'Education at Colegio Estadual Libia Tinoco Melo, with experience in student leadership and tutoring.'],
+        ['2024', 'Computer Science at UESC', 'Started the Computer Science degree and built foundations in programming, mathematics, and software engineering.'],
+        ['2025+', 'Research in computational conservation', 'CNPq ITI-A fellow in a PPGMC-UESC project on neural networks, computer vision, and cetacean social dynamics.'],
       ],
     },
     quote: {
       main: '"Was wir wissen ist ein Tropfen; was wir nicht wissen, ein Ozean."',
       translation:
-        '"I do not know what I may appear to the world, but to myself I seem to have been only like a boy playing on the seashore, amusing myself by finding now and then a smoother pebble or a prettier shell than ordinary, while the great ocean of truth lay all undiscovered before me."',
+        '"What we know is a drop; what we do not know is an ocean."',
     },
     footer: {
       copyright: 'Science, code, and curiosity',
@@ -358,37 +358,37 @@ export const content = {
     ],
     cvButton: 'CV / Resume',
     hero: {
-      status: 'Abierto a colaboraciones',
+      status: 'Becario CNPq ITI-A | Investigacion activa',
       name: 'Reinan Lopes Argolo',
-      kicker: 'Cientifico de Computacion en formacion | Investigador en Machine Learning y Vision Computacional',
+      kicker: 'Estudiante de Ciencias de la Computacion en UESC | Investigador en IA, Vision Computacional y Sistemas Embebidos',
       description:
-        'Desarrollo soluciones que conectan ciencia, inteligencia artificial e impacto real, con foco en vision computacional aplicada a la investigacion y conservacion.',
+        'Trabajo con PPGMC-UESC en procesamiento de imagenes, redes neuronales y vision computacional aplicada a cetaceos, conectando investigacion cientifica, codigo y conservacion marina.',
       primaryAction: 'Ver proyectos',
       secondaryAction: 'Ver investigacion',
     },
     about: {
       eyebrow: 'Sobre mi',
-      title: 'Investigacion aplicada con rigor de ingenieria.',
+      title: 'Investigacion aplicada entre ciencia, codigo y conservacion.',
       body:
-        'Soy estudiante de Ciencia de la Computacion interesado en construir sistemas inteligentes capaces de interpretar datos visuales complejos. Mi trabajo combina aprendizaje automatico, vision computacional y automatizacion para transformar pixeles en evidencia cientifica.',
+        'Soy estudiante de Ciencias de la Computacion en la Universidade Estadual de Santa Cruz (UESC) y becario de Iniciacion Tecnologica e Industrial del CNPq. Tengo experiencia con C, Python, Java, JavaScript, React, Linux y sistemas embebidos. Actualmente participo en un proyecto de investigacion con el Programa de Posgrado en Modelado Computacional de la UESC, usando redes neuronales y procesamiento de imagenes para el analisis automatizado de ballenas jorobadas en videos aereos.',
       metrics: [
-        ['8+', 'areas tecnicas'],
-        ['6', 'frameworks de tracking'],
-        ['100%', 'foco en impacto real'],
+        ['2024', 'inicio de la carrera en UESC'],
+        ['2025+', 'investigacion en PPGMC-UESC'],
+        ['2', 'trabajos completos en anales'],
       ],
     },
     interests: {
       eyebrow: 'Foco',
       title: 'Areas de interes',
       items: [
-        'Machine Learning',
+        'Inteligencia Artificial',
         'Deep Learning',
-        'Computer Vision',
+        'Vision Computacional',
+        'Procesamiento de Imagenes',
         'Object Detection',
         'Multi-Object Tracking',
-        'Scientific Computing',
-        'Embedded Systems',
-        'Research Methods',
+        'Modelado de Ambientes Maritimos',
+        'Sistemas Embebidos',
       ],
     },
     projects: {
@@ -396,40 +396,40 @@ export const content = {
       title: 'Proyectos destacados',
       items: [
         {
-          title: 'Proyecto Ballenas Jorobadas',
-          label: 'Research',
+          title: 'Modelo Computacional para Dinamicas Sociales en Cetaceos',
+          label: 'Investigacion',
           description:
-            'Deteccion y analisis automatico de relaciones madre-cria-escolta en imagenes aereas con modelos de vision computacional.',
-          tags: ['YOLO', 'RT-DETR', 'UAV Imagery'],
+            'Proyecto en curso en UESC/PPGMC para inferir dinamicas sociales de ballenas jorobadas a partir de datos videograficos aereos, combinando deteccion, rastreo y analisis de distancias entre individuos.',
+          tags: ['YOLOv8', 'DeepSORT', 'UAV'],
           featured: true,
         },
         {
-          title: 'WhaleTracker',
-          label: 'Pipeline',
+          title: 'Pipeline de Rastreo de Cetaceos en UAV',
+          label: 'ICPRS 2025',
           description:
-            'Procesamiento de videos crudos para generar trayectorias, persistencia de identidad y metricas de conservacion marina.',
-          tags: ['Python', 'MOT', 'OpenCV'],
+            'Pipeline de deep learning para deteccion, rastreo multiobjeto y analisis de interacciones de cetaceos en imagenes aereas, publicado en IEEE ICPRS 2025.',
+          tags: ['Deep Learning', 'MOT', 'IEEE'],
         },
         {
-          title: 'Fermentacion del Cacao',
-          label: 'IoT',
+          title: 'Deteccion de Ballenas Jorobadas en Imagenes de Drone',
+          label: 'SOLAMAC',
           description:
-            'Sistema embebido para monitoreo termico y quimico aplicado a agricultura de precision en el sur de Bahia.',
-          tags: ['Embedded', 'Sensors', 'Linux'],
+            'Investigacion colaborativa sobre el uso de inteligencia artificial para detectar ballenas jorobadas en imagenes de drone.',
+          tags: ['Computer Vision', 'Drone', 'Conservacion'],
         },
         {
-          title: 'Buscador de Peliculas',
-          label: 'Web',
+          title: 'Hackathon de Areas Quemadas',
+          label: 'WorCAP 25',
           description:
-            'Aplicacion React para descubrimiento de contenido, integracion con APIs REST y experiencia de busqueda responsiva.',
-          tags: ['React', 'REST API', 'UX'],
+            'Presentacion de trabajo sobre deteccion de areas quemadas a partir de imagenes satelitales, conectando sensoriamento remoto y aprendizaje automatico.',
+          tags: ['Satellites', 'ML', 'Remote Sensing'],
         },
         {
-          title: 'Herramienta de Compilacion en C',
-          label: 'Tooling',
+          title: 'Residencia EmbarcaTech',
+          label: 'Sistemas Embebidos',
           description:
-            'Automatizacion en shell para compilar, probar y enlazar proyectos C con flujos reproducibles en Linux.',
-          tags: ['Shell', 'GCC', 'Automation'],
+            'Formacion de 160 horas en sistemas embebidos por CEPEDI, con foco en desarrollo tecnologico, automatizacion y computacion aplicada.',
+          tags: ['Embedded', 'CEPEDI', 'Linux'],
         },
       ],
     },
@@ -439,10 +439,10 @@ export const content = {
       modelsTitle: 'Modelos & Frameworks',
       status: 'status: activo',
       items: [
-        'Deteccion de ballenas en imagenes aereas',
-        'Multi-Object Tracking en ambientes marinos',
-        'Persistencia de identidad durante oclusiones',
-        'Metricas de conservacion impulsadas por IA',
+        'Deteccion de ballenas jorobadas en imagenes aereas',
+        'Multi-object tracking en ambientes marinos',
+        'Inferencia de dinamicas sociales en cetaceos',
+        'Transformacion de videos de VANTs en series temporales de posiciones y distancias',
       ],
     },
     publications: {
@@ -452,20 +452,20 @@ export const content = {
       cite: 'Citar',
       items: [
         {
-          title: 'Automatic Detection of Humpback Whales in UAV Images using Deep Learning',
-          authors: 'Reinan Lopes Argolo, et al.',
-          venue: 'International Journal of Marine Science & Technology',
-          year: '2024',
+          title: 'Modelo computacional para inferencia de dinamicas sociais em cetaceos a partir de dados videograficos aereos',
+          authors: 'Reinan Lopes Argolo, Lucas Santiago Carmo dos Santos, Susana Marrero Iglesias, Paulo Eduardo Ambrosio, Bianca Machado Righi',
+          venue: 'XXVIII Encuentro Nacional de Modelado Computacional y XVI Encuentro de Ciencia y Tecnologia de Materiales',
+          year: '2026',
           description:
-            'Este trabajo propone un enfoque basado en redes neuronales convolucionales para la deteccion automatizada de ballenas jorobadas en imagenes capturadas por drones, optimizando el tiempo de procesamiento en censos poblacionales.',
+            'Trabajo sobre la extraccion automatizada de dinamicas espacio-temporales de ballenas jorobadas a partir de filmaciones aereas, combinando YOLOv8 para deteccion y DeepSORT para reconstruccion de trayectorias. DOI: 10.5281/zenodo.18938636.',
         },
         {
-          title: 'Multi-Object Tracking for Marine Conservation: Challenges and Opportunities',
-          authors: 'Reinan Lopes Argolo',
-          venue: 'Latin American Conference on Computer Vision',
-          year: '2023',
+          title: 'An Integrated Deep Learning Pipeline for Multi-Object Tracking and Interaction Analysis of Cetaceans in UAV Imagery',
+          authors: 'Reinan Lopes Argolo, Paulo Eduardo Ambrosio, Bianca Machado Righi, Susana Marrero Iglesias',
+          venue: '2025 15th IEEE International Conference on Pattern Recognition Systems (ICPRS)',
+          year: '2025',
           description:
-            'Un analisis profundo de los desafios tecnicos del rastreo de multiples objetos en ambientes marinos dinamicos, explorando algoritmos de MOT para monitoreo ambiental.',
+            'Articulo publicado en IEEE ICPRS 2025 que propone un pipeline de vision computacional para deteccion, rastreo multiobjeto y analisis de interacciones de cetaceos en imagenes de VANTs. DOI: 10.1109/ICPRS66293.2025.11302860.',
         },
       ],
     },
@@ -475,22 +475,22 @@ export const content = {
       groups: [
         ['Languages', ['Python', 'C', 'C++', 'Java', 'JavaScript']],
         ['AI Stack', ['PyTorch', 'OpenCV', 'Ultralytics', 'NumPy', 'Pandas']],
-        ['Engineering', ['React', 'Docker', 'Linux', 'Git', 'LaTeX']],
+        ['Engineering', ['React', 'Linux', 'Git', 'LaTeX', 'Sistemas Embebidos']],
       ],
     },
     timeline: {
       eyebrow: 'Trayectoria',
       title: 'Timeline',
       items: [
-        ['START', 'CS Fundamentals', 'Algoritmos, estructuras de datos, sistemas operativos y fundamentos matematicos.'],
-        ['EXPLORATION', 'Artificial Intelligence', 'Primeros proyectos con ML, redes neuronales e interfaces de datos.'],
-        ['CURRENT', 'Conservation Tech', 'Vision computacional para rastreo de ballenas y metricas ambientales.'],
+        ['2021-2023', 'Escuela secundaria y liderazgo estudiantil', 'Formacion en el Colegio Estadual Libia Tinoco Melo, con experiencia en liderazgo estudiantil y monitoria.'],
+        ['2024', 'Ciencias de la Computacion en UESC', 'Inicio de la carrera y construccion de bases en programacion, matematica e ingenieria de software.'],
+        ['2025+', 'Investigacion en conservacion computacional', 'Becario CNPq ITI-A en un proyecto del PPGMC-UESC sobre redes neuronales, vision computacional y dinamicas sociales de cetaceos.'],
       ],
     },
     quote: {
       main: '"Was wir wissen ist ein Tropfen; was wir nicht wissen, ein Ozean."',
       translation:
-        '"No se que puedo parecerle al mundo, pero para mi mismo parezco haber sido solo como un nino jugando en la orilla del mar, divirtiendome al encontrar de vez en cuando una piedra mas lisa o una concha mas bonita de lo normal, mientras el gran oceano de la verdad permanecia totalmente por descubrir delante de mi."',
+        '"Lo que sabemos es una gota; lo que ignoramos es un oceano."',
     },
     footer: {
       copyright: 'Ciencia, codigo y curiosidad',
