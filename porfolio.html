@@ -1,0 +1,533 @@
+<!DOCTYPE html><html class="dark" lang="pt-BR" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Reinan Argolo | ML &amp; CV Researcher</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#e0e3e5",
+                        "tertiary": "#f9f5ff",
+                        "inverse-primary": "#00696f",
+                        "on-secondary-fixed": "#2c0051",
+                        "inverse-on-surface": "#2d3133",
+                        "primary": "#e1fdff",
+                        "outline-variant": "#3a494b",
+                        "secondary": "#dcb8ff",
+                        "surface-container-low": "#191c1e",
+                        "on-tertiary": "#2f2f40",
+                        "outline": "#849495",
+                        "on-background": "#e0e3e5",
+                        "on-error": "#690005",
+                        "on-secondary-fixed-variant": "#6700b5",
+                        "surface-tint": "#00dbe7",
+                        "surface-container": "#1d2022",
+                        "secondary-fixed": "#efdbff",
+                        "on-tertiary-fixed-variant": "#464558",
+                        "surface-bright": "#363a3b",
+                        "on-primary": "#00363a",
+                        "surface-container-lowest": "#0b0f10",
+                        "on-primary-container": "#006a71",
+                        "on-tertiary-container": "#5e5e71",
+                        "on-error-container": "#ffdad6",
+                        "primary-fixed": "#74f5ff",
+                        "primary-fixed-dim": "#00dbe7",
+                        "on-primary-fixed-variant": "#004f54",
+                        "surface": "#101415",
+                        "tertiary-container": "#dbd8f0",
+                        "on-secondary-container": "#dcb7ff",
+                        "surface-dim": "#101415",
+                        "tertiary-fixed-dim": "#c6c4db",
+                        "on-tertiary-fixed": "#1a1a2b",
+                        "surface-container-high": "#272a2c",
+                        "on-primary-fixed": "#002022",
+                        "error": "#ffb4ab",
+                        "secondary-container": "#7701d0",
+                        "on-surface-variant": "#b9cacb",
+                        "surface-container-highest": "#323537",
+                        "surface-variant": "#323537",
+                        "inverse-surface": "#e0e3e5",
+                        "on-secondary": "#480081",
+                        "primary-container": "#00f2ff",
+                        "error-container": "#93000a",
+                        "secondary-fixed-dim": "#dcb8ff",
+                        "tertiary-fixed": "#e3e0f8",
+                        "background": "#101415"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "label-caps": ["JetBrains Mono"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Space Grotesk"],
+                        "headline-md": ["Space Grotesk"],
+                        "display-lg": ["Space Grotesk"],
+                        "display-lg-mobile": ["Space Grotesk"],
+                        "code-md": ["JetBrains Mono"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "code-md": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 219, 231, 0.15);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            border-color: rgba(0, 219, 231, 0.4);
+            box-shadow: 0 0 15px rgba(0, 219, 231, 0.1);
+            transform: translateY(-4px);
+        }
+        .grid-lines {
+            background-image: 
+                linear-gradient(rgba(0, 219, 231, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 219, 231, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .glow-button:hover {
+            box-shadow: 0 0 15px rgba(0, 219, 231, 0.3);
+        }
+        .neural-node {
+            animation: pulse 3s infinite ease-in-out;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+<div class="fixed inset-0 grid-lines pointer-events-none z-0"></div>
+<header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-primary/10 shadow-[0_0_15px_rgba(0,219,231,0.1)]">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-headline-lg md:text-headline-lg font-bold text-primary-fixed-dim tracking-tighter">
+                Reinan Argolo
+            </h1>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#about">About</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#research">Research</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#projects">Projects</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#skills">Skills</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors font-label-caps text-label-caps" href="#contact">Contact</a>
+<button class="bg-primary-fixed-dim text-on-primary-fixed px-6 py-2 rounded-full font-label-caps text-label-caps font-bold hover:scale-105 active:scale-95 transition-all glow-button">
+                    CV / Résumé
+                </button>
+</nav>
+<button class="md:hidden text-primary-fixed-dim">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="relative z-10 pt-24">
+<section class="min-h-screen flex items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7 space-y-8">
+<div class="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 px-3 py-1 rounded-full">
+<span class="w-2 h-2 rounded-full bg-primary-fixed-dim animate-ping"></span>
+<span class="text-primary-fixed-dim font-label-caps text-label-caps">Open for Collaboration</span>
+</div>
+<div class="space-y-4">
+<h2 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg leading-tight">
+                            Reinan Lopes Argolo
+                        </h2>
+<p class="font-headline-md text-headline-md text-on-surface-variant font-light">
+                            Computer Scientist in Training | Machine Learning &amp; Computer Vision Researcher
+                        </p>
+<p class="font-body-lg text-body-lg text-outline max-w-xl">
+                            "Desenvolvo soluções que conectam ciência, inteligência artificial e impacto real."
+                        </p>
+</div>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary-fixed-dim text-on-primary-fixed px-8 py-4 rounded-lg font-bold hover:scale-105 transition-transform glow-button" href="#projects">
+                            Ver Projetos
+                        </a>
+<a class="border border-primary-fixed-dim text-primary-fixed-dim px-8 py-4 rounded-lg font-bold hover:bg-primary-fixed-dim/10 transition-all" href="#research">
+                            Ver Pesquisa
+                        </a>
+</div>
+</div>
+<div class="md:col-span-5 relative group hidden md:block">
+<div class="absolute inset-0 bg-primary-fixed-dim/20 blur-[100px] rounded-full group-hover:bg-primary-fixed-dim/30 transition-all duration-700"></div>
+<div class="relative glass-card aspect-square rounded-2xl overflow-hidden p-1 transition-all duration-700 opacity-100 translate-y-0">
+<img alt="Neural network visualization" class="w-full h-full object-cover rounded-xl opacity-80 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1gcqOa8cNI2nMVJ7scO4iVwxIfISCume7PRI5QfTT2VRD41u2kYhej30J0-dD83pEh3YJbHeq2K3IOIEkcDd1ZQ3CS9qMx-XxYy3KVKUq8OAk5tNGHJ8_j_GC-AG15ffFcvRGD3Fa2-dZe73k124tZ3KKDFPeXMAM-d9CYdvj4EiyOKPi7Hw5ZIzX1d14yVkfj-T15tN-iS5LcCIAPhEH1dZIclvlhhLRHmQknrXIh-uJcGyEFz6bRnfD1zlth06IK35ddtCF_ELh">
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="about">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4">
+<h3 class="font-headline-lg text-headline-lg text-primary-fixed-dim mb-4 transition-all duration-700 opacity-100 translate-y-0">About Me</h3>
+<div class="h-1 w-24 bg-primary-fixed-dim rounded-full"></div>
+</div>
+<div class="md:col-span-8">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Sou estudante de Ciência da Computação apaixonado por desvendar os mistérios por trás do aprendizado de máquina e visão computacional. Meu foco reside na construção de sistemas inteligentes capazes de rastrear e interpretar dados visuais complexos, transformando pixels em insights significativos para a ciência e a indústria.
+                    </p>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-container-lowest/50" id="interests">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<h3 class="font-headline-lg text-headline-lg text-center mb-16 transition-all duration-700 opacity-100 translate-y-0">Areas of Interest</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="glass-card p-6 rounded-xl text-center space-y-4 transition-all duration-700 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl">neurology</span>
+<h4 class="font-label-caps text-label-caps">Machine Learning</h4>
+</div>
+<div class="glass-card p-6 rounded-xl text-center space-y-4 transition-all duration-700 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl">psychology</span>
+<h4 class="font-label-caps text-label-caps">Deep Learning</h4>
+</div>
+<div class="glass-card p-6 rounded-xl text-center space-y-4 transition-all duration-700 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl">visibility</span>
+<h4 class="font-label-caps text-label-caps">Computer Vision</h4>
+</div>
+<div class="glass-card p-6 rounded-xl text-center space-y-4 transition-all duration-700 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl">target</span>
+<h4 class="font-label-caps text-label-caps">Object Detection</h4>
+</div>
+<div class="glass-card p-6 rounded-xl text-center space-y-4 transition-all duration-700 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl">route</span>
+<h4 class="font-label-caps text-label-caps">Multi-Object Tracking</h4>
+</div>
+<div class="glass-card p-6 rounded-xl text-center space-y-4 transition-all duration-700 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl">category</span>
+<h4 class="font-label-caps text-label-caps">Image Segmentation</h4>
+</div>
+<div class="glass-card p-6 rounded-xl text-center space-y-4 transition-all duration-700 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl">functions</span>
+<h4 class="font-label-caps text-label-caps">Scientific Computing</h4>
+</div>
+<div class="glass-card p-6 rounded-xl text-center space-y-4 transition-all duration-700 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl">developer_board</span>
+<h4 class="font-label-caps text-label-caps">Embedded Systems</h4>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="projects">
+<h3 class="font-headline-lg text-headline-lg mb-16 transition-all duration-700 opacity-100 translate-y-0">Featured Projects</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col group h-full transition-all duration-700 opacity-100 translate-y-0">
+<div class="relative aspect-video overflow-hidden">
+<img alt="Whale monitoring system screenshot" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJjkM6b6QwauLN11mlUjjHWHFpFSQ32f10Cd-MeVWRco906mcPOk5h-UanrNgrGdNGQkGnNJxcerZng_c0vw7zGrB4j9i2QhDS2H0v9DbL9iA_a53cYjL3YLGjbSqkFYd1NrK0ARwrY0zMACo0Ot19Fg4KSqn6z_y6-Kg60bC26uwlhbv3DBMFQe1yw9Fa1vWCEO6k6LQ8jnrRw3d8x30i6OF909fPFknFKEGVtHxVa2IJECgnySGft3wY__OGTeeoAxtfC7WYGOY3">
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
+<div class="absolute bottom-4 left-4">
+<span class="bg-primary-fixed-dim/20 backdrop-blur-md text-primary-fixed-dim px-3 py-1 rounded-full text-[10px] font-bold border border-primary-fixed-dim/30">RESEARCH</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow space-y-4">
+<h4 class="font-headline-md text-headline-md text-primary-fixed-dim">Projeto Baleias Jubarte</h4>
+<p class="text-on-surface-variant font-body-md line-clamp-3">Utilizando modelos avançados como YOLO e RT-DETR para análise automática de relações mãe-filhote-escorta em imagens aéreas.</p>
+<div class="mt-auto pt-4 flex flex-wrap gap-2">
+<span class="bg-surface-variant/30 px-3 py-1 rounded-md text-[11px] font-label-caps text-outline">YOLO</span>
+<span class="bg-surface-variant/30 px-3 py-1 rounded-md text-[11px] font-label-caps text-outline">RT-DETR</span>
+</div>
+</div>
+</div>
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col h-full transition-all duration-700 opacity-100 translate-y-0">
+<div class="p-8 flex flex-col h-full space-y-6">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-fixed-dim">analytics</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-primary-fixed-dim mb-2">WhaleTracker</h4>
+<p class="text-on-surface-variant font-body-md">Uma pipeline inteligente que processa vídeos brutos e gera trajetórias e métricas precisas para conservação marinha.</p>
+</div>
+<div class="mt-auto pt-4 flex flex-wrap gap-2">
+<span class="bg-surface-variant/30 px-3 py-1 rounded-md text-[11px] font-label-caps text-outline">PYTHON</span>
+<span class="bg-surface-variant/30 px-3 py-1 rounded-md text-[11px] font-label-caps text-outline">MOT</span>
+</div>
+</div>
+</div>
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col h-full transition-all duration-700 opacity-100 translate-y-0">
+<div class="p-8 flex flex-col h-full space-y-6">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-fixed-dim">agriculture</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-primary-fixed-dim mb-2">Fermentação do Cacau</h4>
+<p class="text-on-surface-variant font-body-md">Sistema embarcado focado em agricultura de precisão para monitoramento térmico e químico do cacau.</p>
+</div>
+<div class="mt-auto pt-4 flex flex-wrap gap-2">
+<span class="bg-surface-variant/30 px-3 py-1 rounded-md text-[11px] font-label-caps text-outline">EMBEDDED</span>
+<span class="bg-surface-variant/30 px-3 py-1 rounded-md text-[11px] font-label-caps text-outline">IOT</span>
+</div>
+</div>
+</div>
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col h-full transition-all duration-700 opacity-100 translate-y-0">
+<div class="p-8 flex flex-col h-full space-y-6">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-fixed-dim">search</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-primary-fixed-dim mb-2">Motor de Busca de Filmes</h4>
+<p class="text-on-surface-variant font-body-md">Aplicação web em React explorando integração de APIs e interfaces fluidas para descoberta de conteúdo.</p>
+</div>
+<div class="mt-auto pt-4 flex flex-wrap gap-2">
+<span class="bg-surface-variant/30 px-3 py-1 rounded-md text-[11px] font-label-caps text-outline">REACT</span>
+<span class="bg-surface-variant/30 px-3 py-1 rounded-md text-[11px] font-label-caps text-outline">REST API</span>
+</div>
+</div>
+</div>
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col h-full md:col-span-2 transition-all duration-700 opacity-100 translate-y-0">
+<div class="p-8 flex flex-col md:flex-row gap-8 items-start h-full">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary-fixed-dim">terminal</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-primary-fixed-dim mb-2">Ferramenta de Compilação em C</h4>
+<p class="text-on-surface-variant font-body-md max-w-2xl">Shell script robusto automatizando pipelines de compilação, testes e linkagem para projetos em linguagem C de grande escala.</p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="bg-surface-variant/30 px-3 py-1 rounded-md text-[11px] font-label-caps text-outline">SHELL</span>
+<span class="bg-surface-variant/30 px-3 py-1 rounded-md text-[11px] font-label-caps text-outline">GCC</span>
+<span class="bg-surface-variant/30 px-3 py-1 rounded-md text-[11px] font-label-caps text-outline">LINUX</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-container-low border-y border-outline-variant/30" id="research">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-5">
+<h3 class="font-headline-lg text-headline-lg text-primary-fixed-dim mb-8 transition-all duration-700 opacity-100 translate-y-0">Scientific Research</h3>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="w-1 bg-primary-fixed-dim rounded-full"></div>
+<p class="text-on-surface font-body-lg">Whale detection in aerial images</p>
+</div>
+<div class="flex gap-4">
+<div class="w-1 bg-primary-fixed-dim rounded-full"></div>
+<p class="text-on-surface font-body-lg">Multi-Object Tracking (MOT) in marine environments</p>
+</div>
+<div class="flex gap-4">
+<div class="w-1 bg-primary-fixed-dim rounded-full"></div>
+<p class="text-on-surface font-body-lg">Identity persistence across occlusions</p>
+</div>
+<div class="flex gap-4">
+<div class="w-1 bg-primary-fixed-dim rounded-full"></div>
+<p class="text-on-surface font-body-lg">AI-driven conservation metrics</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 flex flex-col justify-center">
+<h4 class="font-label-caps text-label-caps text-outline mb-6">MODELS &amp; FRAMEWORKS</h4>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+<div class="p-4 border border-outline-variant/30 rounded-lg font-code-md text-code-md text-primary-fixed-dim bg-surface/50">YOLO v8/v10</div>
+<div class="p-4 border border-outline-variant/30 rounded-lg font-code-md text-code-md text-primary-fixed-dim bg-surface/50">RT-DETR</div>
+<div class="p-4 border border-outline-variant/30 rounded-lg font-code-md text-code-md text-primary-fixed-dim bg-surface/50">DeepSORT</div>
+<div class="p-4 border border-outline-variant/30 rounded-lg font-code-md text-code-md text-primary-fixed-dim bg-surface/50">ByteTrack</div>
+<div class="p-4 border border-outline-variant/30 rounded-lg font-code-md text-code-md text-primary-fixed-dim bg-surface/50">OC-SORT</div>
+<div class="p-4 border border-outline-variant/30 rounded-lg font-code-md text-code-md text-primary-fixed-dim bg-surface/50">StrongSORT</div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="publications">
+<h3 class="font-headline-lg text-headline-lg mb-16 text-center md:text-left transition-all duration-700 opacity-100 translate-y-0">Scientific Publications</h3>
+<div class="space-y-8">
+<!-- Publication 1 -->
+<div class="glass-card p-8 rounded-2xl transition-all duration-700 opacity-100 translate-y-0">
+<div class="flex flex-col md:flex-row justify-between gap-6">
+<div class="space-y-4 flex-grow">
+<h4 class="font-headline-md text-headline-md text-primary-fixed-dim leading-tight">Automatic Detection of Humpback Whales in UAV Images using Deep Learning</h4>
+<p class="font-body-md text-on-surface-variant italic">
+<strong class="text-primary-fixed-dim">Reinan Lopes Argolo</strong>, et al.
+          </p>
+<p class="font-body-md text-outline italic">International Journal of Marine Science &amp; Technology (2024)</p>
+<p class="font-body-md text-on-surface-variant max-w-4xl">
+            Este trabalho propõe uma abordagem baseada em Redes Neurais Convolucionais para a detecção automatizada de baleias-jubarte em imagens capturadas por drones, otimizando o tempo de processamento em levantamentos populacionais.
+          </p>
+</div>
+<div class="flex md:flex-col gap-3 shrink-0">
+<a class="flex items-center gap-2 px-4 py-2 border border-primary-fixed-dim/30 rounded-lg text-primary-fixed-dim hover:bg-primary-fixed-dim/10 transition-colors font-label-caps text-label-caps" href="#">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span> Read Paper
+          </a>
+<button class="flex items-center gap-2 px-4 py-2 border border-primary-fixed-dim/30 rounded-lg text-primary-fixed-dim hover:bg-primary-fixed-dim/10 transition-colors font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[18px]">format_quote</span> Cite
+          </button>
+</div>
+</div>
+</div>
+<!-- Publication 2 -->
+<div class="glass-card p-8 rounded-2xl transition-all duration-700 opacity-100 translate-y-0">
+<div class="flex flex-col md:flex-row justify-between gap-6">
+<div class="space-y-4 flex-grow">
+<h4 class="font-headline-md text-headline-md text-primary-fixed-dim leading-tight">Multi-Object Tracking for Marine Conservation: Challenges and Opportunities</h4>
+<p class="font-body-md text-on-surface-variant italic">
+<strong class="text-primary-fixed-dim">Reinan Lopes Argolo</strong>
+</p>
+<p class="font-body-md text-outline italic">Latin American Conference on Computer Vision (2023)</p>
+<p class="font-body-md text-on-surface-variant max-w-4xl">
+            Uma análise aprofundada dos desafios técnicos envolvidos no rastreamento de múltiplos objetos em ambientes marinhos dinâmicos, explorando o uso de algoritmos de MOT para monitoramento ambiental.
+          </p>
+</div>
+<div class="flex md:flex-col gap-3 shrink-0">
+<a class="flex items-center gap-2 px-4 py-2 border border-primary-fixed-dim/30 rounded-lg text-primary-fixed-dim hover:bg-primary-fixed-dim/10 transition-colors font-label-caps text-label-caps" href="#">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span> Read Paper
+          </a>
+<button class="flex items-center gap-2 px-4 py-2 border border-primary-fixed-dim/30 rounded-lg text-primary-fixed-dim hover:bg-primary-fixed-dim/10 transition-colors font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[18px]">format_quote</span> Cite
+          </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center" id="skills">
+<h3 class="font-headline-lg text-headline-lg mb-12 transition-all duration-700 opacity-100 translate-y-0">Technical Skills</h3>
+<div class="flex flex-wrap justify-center gap-3">
+<span class="px-5 py-2 bg-secondary-container/20 border border-secondary/20 rounded-full text-secondary font-label-caps text-label-caps">Python</span>
+<span class="px-5 py-2 bg-secondary-container/20 border border-secondary/20 rounded-full text-secondary font-label-caps text-label-caps">C</span>
+<span class="px-5 py-2 bg-secondary-container/20 border border-secondary/20 rounded-full text-secondary font-label-caps text-label-caps">C++</span>
+<span class="px-5 py-2 bg-secondary-container/20 border border-secondary/20 rounded-full text-secondary font-label-caps text-label-caps">Java</span>
+<span class="px-5 py-2 bg-secondary-container/20 border border-secondary/20 rounded-full text-secondary font-label-caps text-label-caps">JavaScript</span>
+<span class="px-5 py-2 bg-secondary-container/20 border border-secondary/20 rounded-full text-secondary font-label-caps text-label-caps">React</span>
+<span class="px-5 py-2 bg-primary-container/10 border border-primary/20 rounded-full text-primary-fixed-dim font-label-caps text-label-caps">PyTorch</span>
+<span class="px-5 py-2 bg-primary-container/10 border border-primary/20 rounded-full text-primary-fixed-dim font-label-caps text-label-caps">OpenCV</span>
+<span class="px-5 py-2 bg-primary-container/10 border border-primary/20 rounded-full text-primary-fixed-dim font-label-caps text-label-caps">Ultralytics</span>
+<span class="px-5 py-2 bg-primary-container/10 border border-primary/20 rounded-full text-primary-fixed-dim font-label-caps text-label-caps">Docker</span>
+<span class="px-5 py-2 bg-surface-variant/40 border border-outline/20 rounded-full text-on-surface-variant font-label-caps text-label-caps">Linux</span>
+<span class="px-5 py-2 bg-surface-variant/40 border border-outline/20 rounded-full text-on-surface-variant font-label-caps text-label-caps">Git</span>
+<span class="px-5 py-2 bg-surface-variant/40 border border-outline/20 rounded-full text-on-surface-variant font-label-caps text-label-caps">LaTeX</span>
+</div>
+</section>
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto overflow-hidden" id="timeline">
+<h3 class="font-headline-lg text-headline-lg text-center mb-16 transition-all duration-700 opacity-100 translate-y-0">Timeline</h3>
+<div class="relative">
+<div class="absolute left-1/2 top-0 bottom-0 w-px bg-outline-variant/30 -translate-x-1/2 hidden md:block"></div>
+<div class="space-y-12 relative">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="md:w-1/2 md:text-right">
+<span class="font-label-caps text-label-caps text-primary-fixed-dim">START</span>
+<h4 class="font-headline-md text-headline-md">CS Fundamentals</h4>
+<p class="text-outline">Início da jornada acadêmica, mergulhando em algoritmos e sistemas operacionais.</p>
+</div>
+<div class="w-4 h-4 bg-primary-fixed-dim rounded-full shrink-0 z-10 hidden md:block"></div>
+<div class="md:w-1/2"></div>
+</div>
+<div class="flex flex-col md:flex-row-reverse items-center gap-8">
+<div class="md:w-1/2">
+<span class="font-label-caps text-label-caps text-primary-fixed-dim">EXPLORATION</span>
+<h4 class="font-headline-md text-headline-md">Artificial Intelligence</h4>
+<p class="text-outline">Primeiros passos em ML e Redes Neurais, aplicando teoria a problemas práticos.</p>
+</div>
+<div class="w-4 h-4 bg-primary-fixed-dim rounded-full shrink-0 z-10 hidden md:block"></div>
+<div class="md:w-1/2"></div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="md:w-1/2 md:text-right">
+<span class="font-label-caps text-label-caps text-primary-fixed-dim">CURRENT</span>
+<h4 class="font-headline-md text-headline-md">Conservation Tech</h4>
+<p class="text-outline">Foco total em Computer Vision para rastreamento de baleias e biodiversidade.</p>
+</div>
+<div class="w-4 h-4 bg-primary-fixed-dim rounded-full shrink-0 z-10 hidden md:block shadow-[0_0_15px_rgba(0,219,231,0.5)]"></div>
+<div class="md:w-1/2"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="glass-card p-12 rounded-3xl text-center relative overflow-hidden transition-all duration-700 opacity-100 translate-y-0">
+<div class="absolute -top-24 -left-24 w-64 h-64 bg-primary-fixed-dim/10 rounded-full blur-[100px]"></div>
+<h3 class="font-display-lg-mobile text-display-lg-mobile md:text-headline-lg md:font-headline-lg text-on-surface mb-6 italic transition-all duration-700 opacity-100 translate-y-0">"was wir wissen ist ein tropfen was wir nitch wissen ein ozean"</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto leading-relaxed">Não sei como posso parecer ao mundo, mas para mim pareço ter sido apenas como um menino brincando  beira-mar, divertindo-me em encontrar de vez em quando uma pedra mais lisa ou uma concha mais bonita do que o normal, enquanto o grande oceano da verdade continuava todo por descobrir diante de mim.</p>
+</div>
+</section>
+</main>
+<footer class="bg-surface-container-lowest border-t border-outline-variant/30 w-full py-12 relative z-10" id="contact">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop gap-base max-w-container-max mx-auto">
+<div class="space-y-2 text-center md:text-left">
+<h2 class="font-headline-md text-headline-md text-on-surface">Reinan Argolo</h2>
+<p class="text-outline font-body-md">© 2024 Reinan Lopes Argolo • Ciência, código e curiosidade</p>
+</div>
+<div class="flex gap-6 mt-8 md:mt-0">
+<a class="text-on-surface-variant hover:text-primary-fixed-dim transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined">code</span>
+<span class="font-label-caps text-label-caps">GitHub</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary-fixed-dim transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="font-label-caps text-label-caps">LinkedIn</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary-fixed-dim transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-label-caps text-label-caps">Email</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary-fixed-dim transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined">school</span>
+<span class="font-label-caps text-label-caps">ResearchGate</span>
+</a>
+</div>
+</div>
+</footer>
+<script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.glass-card, section h3, .timeline-item').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+
+
+
+
+</body></html>
