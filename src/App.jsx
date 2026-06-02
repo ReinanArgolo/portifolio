@@ -16,6 +16,7 @@ import {
   Radar,
   Quote as QuoteIcon,
   Search,
+  Send,
   Waves,
   X,
 } from 'lucide-react';
@@ -123,6 +124,7 @@ function App() {
         <Skills t={t} />
         <Timeline t={t} />
         <Quote t={t} />
+        <Contact t={t} />
       </main>
       <Footer t={t} year={year} />
     </>
@@ -490,9 +492,65 @@ function Quote({ t }) {
   );
 }
 
+function Contact({ t }) {
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+
+  const updateField = (field) => (event) => {
+    setForm((current) => ({ ...current, [field]: event.target.value }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const subject = encodeURIComponent(form.subject || t.contact.defaultSubject);
+    const body = encodeURIComponent(
+      `${t.contact.emailBody.name}: ${form.name}\n${t.contact.emailBody.email}: ${form.email}\n\n${form.message}`,
+    );
+    window.location.href = `mailto:rlargolo.cic@uesc.br?subject=${subject}&body=${body}`;
+  };
+
+  return (
+    <motion.section className="contact-section section-shell" id="contact" {...revealProps}>
+      <SectionLabel eyebrow={t.contact.eyebrow} title={t.contact.title} />
+      <div className="contact-layout">
+        <div className="contact-copy">
+          <p>{t.contact.description}</p>
+          <a href="mailto:rlargolo.cic@uesc.br">rlargolo.cic@uesc.br</a>
+        </div>
+        <form className="contact-form glass-card" onSubmit={handleSubmit}>
+          <label>
+            <span>{t.contact.fields.name}</span>
+            <input onChange={updateField('name')} required type="text" value={form.name} />
+          </label>
+          <label>
+            <span>{t.contact.fields.email}</span>
+            <input onChange={updateField('email')} required type="email" value={form.email} />
+          </label>
+          <label>
+            <span>{t.contact.fields.subject}</span>
+            <input onChange={updateField('subject')} type="text" value={form.subject} />
+          </label>
+          <label>
+            <span>{t.contact.fields.message}</span>
+            <textarea onChange={updateField('message')} required rows="5" value={form.message} />
+          </label>
+          <button className="primary-button" type="submit">
+            {t.contact.submit}
+            <Send size={18} />
+          </button>
+        </form>
+      </div>
+    </motion.section>
+  );
+}
+
 function Footer({ t, year }) {
   return (
-    <footer className="site-footer" id="contact">
+    <footer className="site-footer">
       <div>
         <h2>Reinan Argolo</h2>
         <p>© {year} Reinan Lopes Argolo · {t.footer.copyright}</p>

@@ -166,6 +166,24 @@ export const content = {
       translation:
         '"O que sabemos e uma gota; o que ignoramos e um oceano."',
     },
+    contact: {
+      eyebrow: 'Contato',
+      title: 'Vamos conversar sobre pesquisa, codigo ou colaboracao.',
+      description:
+        'Preencha a mensagem e seu cliente de email sera aberto com tudo pronto para envio. Em um site estatico no GitHub Pages, essa e a forma mais direta sem adicionar backend ou servico externo.',
+      defaultSubject: 'Contato pelo portfolio',
+      fields: {
+        name: 'Nome',
+        email: 'Email',
+        subject: 'Assunto',
+        message: 'Mensagem',
+      },
+      emailBody: {
+        name: 'Nome',
+        email: 'Email',
+      },
+      submit: 'Enviar mensagem',
+    },
     footer: {
       copyright: 'Ciencia, codigo e curiosidade',
       research: 'Research',
@@ -332,6 +350,24 @@ export const content = {
       translation:
         '"What we know is a drop; what we do not know is an ocean."',
     },
+    contact: {
+      eyebrow: 'Contact',
+      title: 'Let us talk about research, code, or collaboration.',
+      description:
+        'Fill in the message and your email client will open with everything ready to send. On a static GitHub Pages site, this is the most direct path without adding a backend or external service.',
+      defaultSubject: 'Portfolio contact',
+      fields: {
+        name: 'Name',
+        email: 'Email',
+        subject: 'Subject',
+        message: 'Message',
+      },
+      emailBody: {
+        name: 'Name',
+        email: 'Email',
+      },
+      submit: 'Send message',
+    },
     footer: {
       copyright: 'Science, code, and curiosity',
       research: 'Research',
@@ -497,6 +533,24 @@ export const content = {
       main: '"Was wir wissen ist ein Tropfen; was wir nicht wissen, ein Ozean."',
       translation:
         '"Lo que sabemos es una gota; lo que ignoramos es un oceano."',
+    },
+    contact: {
+      eyebrow: 'Contacto',
+      title: 'Hablemos sobre investigacion, codigo o colaboracion.',
+      description:
+        'Completa el mensaje y tu cliente de email se abrira con todo listo para enviar. En un sitio estatico en GitHub Pages, esta es la forma mas directa sin agregar backend o servicio externo.',
+      defaultSubject: 'Contacto desde el portfolio',
+      fields: {
+        name: 'Nombre',
+        email: 'Email',
+        subject: 'Asunto',
+        message: 'Mensaje',
+      },
+      emailBody: {
+        name: 'Nombre',
+        email: 'Email',
+      },
+      submit: 'Enviar mensaje',
     },
     footer: {
       copyright: 'Ciencia, codigo y curiosidad',
