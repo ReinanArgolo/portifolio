@@ -121,6 +121,7 @@ function App() {
         <Projects t={t} />
         <Research t={t} />
         <Publications t={t} />
+        <Events t={t} />
         <Skills t={t} />
         <Timeline t={t} />
         <Quote t={t} />
@@ -149,7 +150,7 @@ function Header({ active, language, menuOpen, setLanguage, setMenuOpen, t }) {
 
       <div className="header-controls">
         <LanguageSwitcher language={language} setLanguage={setLanguage} t={t} />
-        <a className="header-action" href="./reinan-lopes-argolo-cv.md" download>
+        <a className="header-action" href="./reinan-lopes-argolo-cv.pdf" download>
           <Download size={17} />
           {t.cvButton}
         </a>
@@ -172,7 +173,7 @@ function Header({ active, language, menuOpen, setLanguage, setMenuOpen, t }) {
           ))}
           <div className="mobile-nav-actions">
             <LanguageSwitcher language={language} setLanguage={setLanguage} t={t} />
-            <a className="header-action mobile-cv-action" href="./reinan-lopes-argolo-cv.md" download>
+            <a className="header-action mobile-cv-action" href="./reinan-lopes-argolo-cv.pdf" download>
               <Download size={17} />
               {t.cvButton}
             </a>
@@ -364,6 +365,14 @@ function Projects({ t }) {
                 </span>
               ))}
             </div>
+            <div className="project-actions">
+              {project.links?.map((link) => (
+                <a href={link.url} key={link.label} target={link.external ? '_blank' : undefined} rel={link.external ? 'noreferrer' : undefined}>
+                  {link.label}
+                  <ExternalLink size={15} />
+                </a>
+              ))}
+            </div>
           </motion.article>
         ))}
       </div>
@@ -444,6 +453,34 @@ function Publications({ t }) {
   );
 }
 
+function Events({ t }) {
+  return (
+    <motion.section className="band-section events-section" id="events" {...revealProps}>
+      <div className="section-shell">
+        <SectionLabel eyebrow={t.events.eyebrow} title={t.events.title} />
+        <div className="events-grid">
+          {t.events.items.map((event) => (
+            <article className="event-card glass-card" key={`${event.title}-${event.year}`}>
+              <div className="event-meta">
+                <span>{event.type}</span>
+                <span>{event.year}</span>
+              </div>
+              <h3>{event.title}</h3>
+              <p>{event.description}</p>
+              {event.url && (
+                <a href={event.url} target="_blank" rel="noreferrer">
+                  {t.events.action}
+                  <ExternalLink size={15} />
+                </a>
+              )}
+            </article>
+          ))}
+        </div>
+      </div>
+    </motion.section>
+  );
+}
+
 function Skills({ t }) {
   return (
     <motion.section className="section-shell" id="skills" {...revealProps}>
@@ -499,18 +536,39 @@ function Contact({ t }) {
     subject: '',
     message: '',
   });
+  const [status, setStatus] = useState('idle');
 
   const updateField = (field) => (event) => {
     setForm((current) => ({ ...current, [field]: event.target.value }));
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    const subject = encodeURIComponent(form.subject || t.contact.defaultSubject);
-    const body = encodeURIComponent(
-      `${t.contact.emailBody.name}: ${form.name}\n${t.contact.emailBody.email}: ${form.email}\n\n${form.message}`,
-    );
-    window.location.href = `mailto:rlargolo.cic@uesc.br?subject=${subject}&body=${body}`;
+    setStatus('sending');
+
+    try {
+      const response = await fetch(t.contact.endpoint, {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          subject: form.subject || t.contact.defaultSubject,
+          message: form.message,
+          _captcha: 'false',
+          _template: 'table',
+        }),
+      });
+
+      if (!response.ok) throw new Error('Contact request failed');
+      setForm({ name: '', email: '', subject: '', message: '' });
+      setStatus('success');
+    } catch {
+      setStatus('error');
+    }
   };
 
   return (
@@ -538,10 +596,17 @@ function Contact({ t }) {
             <span>{t.contact.fields.message}</span>
             <textarea onChange={updateField('message')} required rows="5" value={form.message} />
           </label>
-          <button className="primary-button" type="submit">
-            {t.contact.submit}
+          <button className="primary-button" disabled={status === 'sending'} type="submit">
+            {status === 'sending' ? t.contact.sending : t.contact.submit}
             <Send size={18} />
           </button>
+          {status === 'success' && <p className="form-status success">{t.contact.success}</p>}
+          {status === 'error' && (
+            <p className="form-status error">
+              {t.contact.error}{' '}
+              <a href="mailto:rlargolo.cic@uesc.br">rlargolo.cic@uesc.br</a>
+            </p>
+          )}
         </form>
       </div>
     </motion.section>

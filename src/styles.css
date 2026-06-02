@@ -345,6 +345,14 @@
     @apply rounded border border-purple-tech/20 bg-purple-deep/20 px-3 py-1.5 font-mono text-[11px] font-bold uppercase text-purple-tech;
   }
 
+  .project-actions {
+    @apply mt-5 flex flex-wrap gap-2;
+  }
+
+  .project-actions a {
+    @apply inline-flex items-center gap-1.5 rounded-lg border border-cyan-electric/25 px-3 py-2 font-mono text-[11px] font-bold uppercase text-cyan-bright transition hover:bg-cyan-electric/10;
+  }
+
   .secondary-tag {
     @apply border-cyan-electric/20 bg-cyan-electric/10 text-cyan-bright;
   }
@@ -433,6 +441,34 @@
   .publication-actions a,
   .publication-actions button {
     @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-cyan-electric/30 bg-transparent px-4 py-2 font-mono text-xs font-bold uppercase text-cyan-bright transition hover:bg-cyan-electric/10;
+  }
+
+  .events-grid {
+    @apply grid gap-5 md:grid-cols-2;
+  }
+
+  .event-card {
+    @apply p-6;
+  }
+
+  .event-meta {
+    @apply mb-5 flex flex-wrap gap-3 font-mono text-xs font-bold uppercase text-outline;
+  }
+
+  .event-meta span {
+    @apply rounded border border-outline-variant/50 bg-surface-lowest/50 px-3 py-1.5;
+  }
+
+  .event-card h3 {
+    @apply font-display text-2xl font-semibold text-cyan-pale;
+  }
+
+  .event-card p {
+    @apply mt-3 leading-relaxed text-on-surface-variant;
+  }
+
+  .event-card a {
+    @apply mt-5 inline-flex items-center gap-2 rounded-lg border border-cyan-electric/30 px-3 py-2 font-mono text-xs font-bold uppercase text-cyan-bright transition hover:bg-cyan-electric/10;
   }
 
   .skills-layout {
@@ -534,6 +570,26 @@
 
   .contact-form button {
     @apply w-fit;
+  }
+
+  .contact-form button:disabled {
+    @apply cursor-not-allowed opacity-70;
+  }
+
+  .form-status {
+    @apply rounded-lg border px-4 py-3 text-sm leading-relaxed;
+  }
+
+  .form-status.success {
+    @apply border-cyan-electric/30 bg-cyan-electric/10 text-cyan-bright;
+  }
+
+  .form-status.error {
+    @apply border-red-400/30 bg-red-500/10 text-red-100;
+  }
+
+  .form-status a {
+    @apply font-mono font-bold text-cyan-bright underline decoration-cyan-electric/40 underline-offset-4;
   }
 
   .site-footer {

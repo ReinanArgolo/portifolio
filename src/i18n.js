@@ -25,6 +25,7 @@ export const content = {
       ['Projetos', 'projects'],
       ['Pesquisa', 'research'],
       ['Publicacoes', 'publications'],
+      ['Eventos', 'events'],
       ['Skills', 'skills'],
       ['Contato', 'contact'],
     ],
@@ -74,6 +75,10 @@ export const content = {
             'Projeto em andamento na UESC/PPGMC para inferir dinamicas sociais de baleias-jubarte a partir de dados videograficos aereos, combinando deteccao, rastreamento e analise de distancias entre individuos.',
           tags: ['YOLOv8', 'DeepSORT', 'UAV'],
           featured: true,
+          links: [
+            { label: 'Detalhes', url: './projects/cetacean-social-dynamics.html' },
+            { label: 'Artigo', url: 'https://www.even3.com.br/anais/enmc-2025/1268156-modelo-computacional-para-inferencia-de-dinamicas-sociais-em-cetaceos-a-partir-de-dados-videograficos-aereos', external: true },
+          ],
         },
         {
           title: 'Pipeline de Rastreamento de Cetaceos em UAV',
@@ -81,6 +86,10 @@ export const content = {
           description:
             'Pipeline de deep learning para deteccao, rastreamento multiobjeto e analise de interacoes de cetaceos em imagens aereas, publicado no IEEE ICPRS 2025.',
           tags: ['Deep Learning', 'MOT', 'IEEE'],
+          links: [
+            { label: 'Detalhes', url: './projects/uav-cetacean-tracking.html' },
+            { label: 'DOI', url: 'https://doi.org/10.1109/ICPRS66293.2025.11302860', external: true },
+          ],
         },
         {
           title: 'Deteccao de Baleias Jubarte em Imagens de Drone',
@@ -88,6 +97,7 @@ export const content = {
           description:
             'Trabalho em colaboracao com o grupo de pesquisa sobre uso de inteligencia artificial para detectar baleias-jubarte em imagens de drone.',
           tags: ['Computer Vision', 'Drone', 'Conservacao'],
+          links: [{ label: 'Detalhes', url: './projects/humpback-whale-detection.html' }],
         },
         {
           title: 'Hackathon de Areas Queimadas',
@@ -95,6 +105,7 @@ export const content = {
           description:
             'Apresentacao de trabalho sobre deteccao de areas queimadas a partir de imagens de satelite, conectando sensoriamento remoto e aprendizado de maquina.',
           tags: ['Satellites', 'ML', 'Remote Sensing'],
+          links: [{ label: 'Detalhes', url: './projects/burned-area-detection.html' }],
         },
         {
           title: 'Residencia EmbarcaTech',
@@ -102,6 +113,7 @@ export const content = {
           description:
             'Formacao de 160 horas em sistemas embarcados pelo CEPEDI, com foco em desenvolvimento tecnologico, automacao e computacao aplicada.',
           tags: ['Embedded', 'CEPEDI', 'Linux'],
+          links: [{ label: 'Detalhes', url: './projects/embarcatech.html' }],
         },
       ],
     },
@@ -143,6 +155,43 @@ export const content = {
         },
       ],
     },
+    events: {
+      eyebrow: 'Agenda',
+      title: 'Awards, Presentations & Events',
+      action: 'Ver referencia',
+      items: [
+        {
+          type: 'Conferencia',
+          year: '2025',
+          title: 'ICPRS 2025',
+          description:
+            'Publicacao no IEEE International Conference on Pattern Recognition Systems sobre rastreamento multiobjeto e analise de interacoes de cetaceos em imagens de VANTs.',
+          url: 'https://doi.org/10.1109/ICPRS66293.2025.11302860',
+        },
+        {
+          type: 'Anais',
+          year: '2026',
+          title: 'ENMC / ECTM',
+          description:
+            'Trabalho completo sobre modelo computacional para inferencia de dinamicas sociais em cetaceos a partir de dados videograficos aereos.',
+          url: 'https://www.even3.com.br/anais/enmc-2025/1268156-modelo-computacional-para-inferencia-de-dinamicas-sociais-em-cetaceos-a-partir-de-dados-videograficos-aereos',
+        },
+        {
+          type: 'Apresentacao',
+          year: '2025',
+          title: 'SOLAMAC',
+          description:
+            'Apresentacao de pesquisa sobre visao computacional aplicada a deteccao de baleias-jubarte em imagens de drone.',
+        },
+        {
+          type: 'Hackathon',
+          year: '2025',
+          title: 'WorCAP 25',
+          description:
+            'Participacao com trabalho sobre deteccao de areas queimadas usando imagens de satelite e aprendizado de maquina.',
+        },
+      ],
+    },
     skills: {
       eyebrow: 'Stack',
       title: 'Technical Skills',
@@ -170,7 +219,8 @@ export const content = {
       eyebrow: 'Contato',
       title: 'Vamos conversar sobre pesquisa, codigo ou colaboracao.',
       description:
-        'Preencha a mensagem e seu cliente de email sera aberto com tudo pronto para envio. Em um site estatico no GitHub Pages, essa e a forma mais direta sem adicionar backend ou servico externo.',
+        'Preencha a mensagem para enviar diretamente para meu email. O envio usa FormSubmit em modo estatico, sem backend proprio.',
+      endpoint: 'https://formsubmit.co/ajax/rlargolo.cic@uesc.br',
       defaultSubject: 'Contato pelo portfolio',
       fields: {
         name: 'Nome',
@@ -183,6 +233,9 @@ export const content = {
         email: 'Email',
       },
       submit: 'Enviar mensagem',
+      sending: 'Enviando...',
+      success: 'Mensagem enviada. Se for o primeiro envio pelo FormSubmit, pode ser necessario confirmar a ativacao no email.',
+      error: 'Nao foi possivel enviar diretamente agora. Voce ainda pode escrever para',
     },
     footer: {
       copyright: 'Ciencia, codigo e curiosidade',
@@ -209,6 +262,7 @@ export const content = {
       ['Projects', 'projects'],
       ['Research', 'research'],
       ['Publications', 'publications'],
+      ['Events', 'events'],
       ['Skills', 'skills'],
       ['Contact', 'contact'],
     ],
@@ -258,6 +312,10 @@ export const content = {
             'Ongoing UESC/PPGMC project for inferring humpback whale social dynamics from aerial video data by combining detection, tracking, and distance analysis between individuals.',
           tags: ['YOLOv8', 'DeepSORT', 'UAV'],
           featured: true,
+          links: [
+            { label: 'Details', url: './projects/cetacean-social-dynamics.html' },
+            { label: 'Paper', url: 'https://www.even3.com.br/anais/enmc-2025/1268156-modelo-computacional-para-inferencia-de-dinamicas-sociais-em-cetaceos-a-partir-de-dados-videograficos-aereos', external: true },
+          ],
         },
         {
           title: 'Cetacean Tracking Pipeline in UAV Imagery',
@@ -265,6 +323,10 @@ export const content = {
           description:
             'Deep learning pipeline for detection, multi-object tracking, and interaction analysis of cetaceans in aerial imagery, published at IEEE ICPRS 2025.',
           tags: ['Deep Learning', 'MOT', 'IEEE'],
+          links: [
+            { label: 'Details', url: './projects/uav-cetacean-tracking.html' },
+            { label: 'DOI', url: 'https://doi.org/10.1109/ICPRS66293.2025.11302860', external: true },
+          ],
         },
         {
           title: 'Humpback Whale Detection in Drone Images',
@@ -272,6 +334,7 @@ export const content = {
           description:
             'Collaborative research on artificial intelligence for detecting humpback whales in drone images.',
           tags: ['Computer Vision', 'Drone', 'Conservation'],
+          links: [{ label: 'Details', url: './projects/humpback-whale-detection.html' }],
         },
         {
           title: 'Burned Area Detection Hackathon',
@@ -279,6 +342,7 @@ export const content = {
           description:
             'Work presentation on detecting burned areas from satellite imagery, connecting remote sensing and machine learning.',
           tags: ['Satellites', 'ML', 'Remote Sensing'],
+          links: [{ label: 'Details', url: './projects/burned-area-detection.html' }],
         },
         {
           title: 'EmbarcaTech Residency',
@@ -286,6 +350,7 @@ export const content = {
           description:
             'A 160-hour training program in embedded systems through CEPEDI, focused on technological development, automation, and applied computing.',
           tags: ['Embedded', 'CEPEDI', 'Linux'],
+          links: [{ label: 'Details', url: './projects/embarcatech.html' }],
         },
       ],
     },
@@ -327,6 +392,43 @@ export const content = {
         },
       ],
     },
+    events: {
+      eyebrow: 'Agenda',
+      title: 'Awards, Presentations & Events',
+      action: 'View reference',
+      items: [
+        {
+          type: 'Conference',
+          year: '2025',
+          title: 'ICPRS 2025',
+          description:
+            'IEEE International Conference on Pattern Recognition Systems publication on multi-object tracking and interaction analysis of cetaceans in UAV imagery.',
+          url: 'https://doi.org/10.1109/ICPRS66293.2025.11302860',
+        },
+        {
+          type: 'Proceedings',
+          year: '2026',
+          title: 'ENMC / ECTM',
+          description:
+            'Full paper on a computational model for inferring social dynamics in cetaceans from aerial video data.',
+          url: 'https://www.even3.com.br/anais/enmc-2025/1268156-modelo-computacional-para-inferencia-de-dinamicas-sociais-em-cetaceos-a-partir-de-dados-videograficos-aereos',
+        },
+        {
+          type: 'Presentation',
+          year: '2025',
+          title: 'SOLAMAC',
+          description:
+            'Research presentation on computer vision applied to humpback whale detection in drone imagery.',
+        },
+        {
+          type: 'Hackathon',
+          year: '2025',
+          title: 'WorCAP 25',
+          description:
+            'Participation with work on burned area detection using satellite imagery and machine learning.',
+        },
+      ],
+    },
     skills: {
       eyebrow: 'Stack',
       title: 'Technical Skills',
@@ -354,7 +456,8 @@ export const content = {
       eyebrow: 'Contact',
       title: 'Let us talk about research, code, or collaboration.',
       description:
-        'Fill in the message and your email client will open with everything ready to send. On a static GitHub Pages site, this is the most direct path without adding a backend or external service.',
+        'Fill in the message to send it directly to my email. Delivery uses FormSubmit in static mode, without a custom backend.',
+      endpoint: 'https://formsubmit.co/ajax/rlargolo.cic@uesc.br',
       defaultSubject: 'Portfolio contact',
       fields: {
         name: 'Name',
@@ -367,6 +470,9 @@ export const content = {
         email: 'Email',
       },
       submit: 'Send message',
+      sending: 'Sending...',
+      success: 'Message sent. If this is the first FormSubmit message, email activation may still be required.',
+      error: 'Direct sending failed right now. You can still write to',
     },
     footer: {
       copyright: 'Science, code, and curiosity',
@@ -393,6 +499,7 @@ export const content = {
       ['Proyectos', 'projects'],
       ['Investigacion', 'research'],
       ['Publicaciones', 'publications'],
+      ['Eventos', 'events'],
       ['Skills', 'skills'],
       ['Contacto', 'contact'],
     ],
@@ -442,6 +549,10 @@ export const content = {
             'Proyecto en curso en UESC/PPGMC para inferir dinamicas sociales de ballenas jorobadas a partir de datos videograficos aereos, combinando deteccion, rastreo y analisis de distancias entre individuos.',
           tags: ['YOLOv8', 'DeepSORT', 'UAV'],
           featured: true,
+          links: [
+            { label: 'Detalles', url: './projects/cetacean-social-dynamics.html' },
+            { label: 'Articulo', url: 'https://www.even3.com.br/anais/enmc-2025/1268156-modelo-computacional-para-inferencia-de-dinamicas-sociais-em-cetaceos-a-partir-de-dados-videograficos-aereos', external: true },
+          ],
         },
         {
           title: 'Pipeline de Rastreo de Cetaceos en UAV',
@@ -449,6 +560,10 @@ export const content = {
           description:
             'Pipeline de deep learning para deteccion, rastreo multiobjeto y analisis de interacciones de cetaceos en imagenes aereas, publicado en IEEE ICPRS 2025.',
           tags: ['Deep Learning', 'MOT', 'IEEE'],
+          links: [
+            { label: 'Detalles', url: './projects/uav-cetacean-tracking.html' },
+            { label: 'DOI', url: 'https://doi.org/10.1109/ICPRS66293.2025.11302860', external: true },
+          ],
         },
         {
           title: 'Deteccion de Ballenas Jorobadas en Imagenes de Drone',
@@ -456,6 +571,7 @@ export const content = {
           description:
             'Investigacion colaborativa sobre el uso de inteligencia artificial para detectar ballenas jorobadas en imagenes de drone.',
           tags: ['Computer Vision', 'Drone', 'Conservacion'],
+          links: [{ label: 'Detalles', url: './projects/humpback-whale-detection.html' }],
         },
         {
           title: 'Hackathon de Areas Quemadas',
@@ -463,6 +579,7 @@ export const content = {
           description:
             'Presentacion de trabajo sobre deteccion de areas quemadas a partir de imagenes satelitales, conectando sensoriamento remoto y aprendizaje automatico.',
           tags: ['Satellites', 'ML', 'Remote Sensing'],
+          links: [{ label: 'Detalles', url: './projects/burned-area-detection.html' }],
         },
         {
           title: 'Residencia EmbarcaTech',
@@ -470,6 +587,7 @@ export const content = {
           description:
             'Formacion de 160 horas en sistemas embebidos por CEPEDI, con foco en desarrollo tecnologico, automatizacion y computacion aplicada.',
           tags: ['Embedded', 'CEPEDI', 'Linux'],
+          links: [{ label: 'Detalles', url: './projects/embarcatech.html' }],
         },
       ],
     },
@@ -511,6 +629,43 @@ export const content = {
         },
       ],
     },
+    events: {
+      eyebrow: 'Agenda',
+      title: 'Awards, Presentations & Events',
+      action: 'Ver referencia',
+      items: [
+        {
+          type: 'Conferencia',
+          year: '2025',
+          title: 'ICPRS 2025',
+          description:
+            'Publicacion en IEEE International Conference on Pattern Recognition Systems sobre rastreo multiobjeto y analisis de interacciones de cetaceos en imagenes de VANTs.',
+          url: 'https://doi.org/10.1109/ICPRS66293.2025.11302860',
+        },
+        {
+          type: 'Anales',
+          year: '2026',
+          title: 'ENMC / ECTM',
+          description:
+            'Trabajo completo sobre un modelo computacional para inferir dinamicas sociales en cetaceos desde datos videograficos aereos.',
+          url: 'https://www.even3.com.br/anais/enmc-2025/1268156-modelo-computacional-para-inferencia-de-dinamicas-sociais-em-cetaceos-a-partir-de-dados-videograficos-aereos',
+        },
+        {
+          type: 'Presentacion',
+          year: '2025',
+          title: 'SOLAMAC',
+          description:
+            'Presentacion de investigacion sobre vision computacional aplicada a deteccion de ballenas jorobadas en imagenes de drone.',
+        },
+        {
+          type: 'Hackathon',
+          year: '2025',
+          title: 'WorCAP 25',
+          description:
+            'Participacion con trabajo sobre deteccion de areas quemadas usando imagenes satelitales y aprendizaje automatico.',
+        },
+      ],
+    },
     skills: {
       eyebrow: 'Stack',
       title: 'Technical Skills',
@@ -538,7 +693,8 @@ export const content = {
       eyebrow: 'Contacto',
       title: 'Hablemos sobre investigacion, codigo o colaboracion.',
       description:
-        'Completa el mensaje y tu cliente de email se abrira con todo listo para enviar. En un sitio estatico en GitHub Pages, esta es la forma mas directa sin agregar backend o servicio externo.',
+        'Completa el mensaje para enviarlo directamente a mi email. El envio usa FormSubmit en modo estatico, sin backend propio.',
+      endpoint: 'https://formsubmit.co/ajax/rlargolo.cic@uesc.br',
       defaultSubject: 'Contacto desde el portfolio',
       fields: {
         name: 'Nombre',
@@ -551,6 +707,9 @@ export const content = {
         email: 'Email',
       },
       submit: 'Enviar mensaje',
+      sending: 'Enviando...',
+      success: 'Mensaje enviado. Si es el primer envio por FormSubmit, puede ser necesario confirmar la activacion por email.',
+      error: 'No fue posible enviar directamente ahora. Tambien puedes escribir a',
     },
     footer: {
       copyright: 'Ciencia, codigo y curiosidad',
