@@ -42,10 +42,29 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .academic-discovery-link {
+        position: relative;
+        z-index: 10;
+        display: block;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 1rem 2rem;
+        color: #74f5ff;
+        font: 600 0.75rem/1.5 "JetBrains Mono", monospace;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    </style>
     <title>Reinan Lopes Argolo | Computer Vision Portfolio</title>
   </head>
   <body>
     <div id="root"></div>
+    <nav class="academic-discovery-link" aria-label="Publicação acadêmica em destaque">
+      <a href="./publications/enmc-2025/">
+        Publicação: Modelo computacional para inferência de dinâmicas sociais em cetáceos a partir de dados videográficos aéreos
+      </a>
+    </nav>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

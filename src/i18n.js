@@ -77,7 +77,7 @@ export const content = {
           featured: true,
           links: [
             { label: 'Detalhes', url: './projects/cetacean-social-dynamics.html' },
-            { label: 'Artigo', url: 'https://www.even3.com.br/anais/enmc-2025/1268156-modelo-computacional-para-inferencia-de-dinamicas-sociais-em-cetaceos-a-partir-de-dados-videograficos-aereos', external: true },
+            { label: 'Artigo', url: './publications/enmc-2025/' },
           ],
         },
         {
@@ -136,11 +136,11 @@ export const content = {
       cite: 'Citar',
       items: [
         {
-          title: 'Modelo computacional para inferencia de dinamicas sociais em cetaceos a partir de dados videograficos aereos',
-          authors: 'Reinan Lopes Argolo, Lucas Santiago Carmo dos Santos, Susana Marrero Iglesias, Paulo Eduardo Ambrosio, Bianca Machado Righi',
+          title: 'Modelo computacional para inferência de dinâmicas sociais em cetáceos a partir de dados videográficos aéreos',
+          authors: 'Reinan Lopes Argolo, Lucas Santiago Carmo dos Santos, Susana Marrero Iglesias, Paulo Eduardo Ambrósio, Bianca Machado Righi',
           venue: 'XXVIII Encontro Nacional de Modelagem Computacional e XVI Encontro de Ciencia e Tecnologia de Materiais',
-          year: '2026',
-          url: 'https://www.even3.com.br/anais/enmc-2025/1268156-modelo-computacional-para-inferencia-de-dinamicas-sociais-em-cetaceos-a-partir-de-dados-videograficos-aereos',
+          year: '2025 — online em 2026',
+          url: './publications/enmc-2025/',
           description:
             'Trabalho sobre a extracao automatica de dinamicas espaco-temporais de baleias-jubarte a partir de filmagens aereas, articulando YOLOv8 para deteccao e DeepSORT para reconstrucao de trajetorias. DOI: 10.5281/zenodo.18938636.',
         },
@@ -170,11 +170,11 @@ export const content = {
         },
         {
           type: 'Anais',
-          year: '2026',
+          year: '2025 — online em 2026',
           title: 'ENMC / ECTM',
           description:
             'Trabalho completo sobre modelo computacional para inferencia de dinamicas sociais em cetaceos a partir de dados videograficos aereos.',
-          url: 'https://www.even3.com.br/anais/enmc-2025/1268156-modelo-computacional-para-inferencia-de-dinamicas-sociais-em-cetaceos-a-partir-de-dados-videograficos-aereos',
+          url: './publications/enmc-2025/',
         },
         {
           type: 'Apresentacao',
@@ -314,7 +314,7 @@ export const content = {
           featured: true,
           links: [
             { label: 'Details', url: './projects/cetacean-social-dynamics.html' },
-            { label: 'Paper', url: 'https://www.even3.com.br/anais/enmc-2025/1268156-modelo-computacional-para-inferencia-de-dinamicas-sociais-em-cetaceos-a-partir-de-dados-videograficos-aereos', external: true },
+            { label: 'Paper', url: './publications/enmc-2025/' },
           ],
         },
         {
@@ -373,11 +373,11 @@ export const content = {
       cite: 'Cite',
       items: [
         {
-          title: 'Modelo computacional para inferencia de dinamicas sociais em cetaceos a partir de dados videograficos aereos',
-          authors: 'Reinan Lopes Argolo, Lucas Santiago Carmo dos Santos, Susana Marrero Iglesias, Paulo Eduardo Ambrosio, Bianca Machado Righi',
+          title: 'Modelo computacional para inferência de dinâmicas sociais em cetáceos a partir de dados videográficos aéreos',
+          authors: 'Reinan Lopes Argolo, Lucas Santiago Carmo dos Santos, Susana Marrero Iglesias, Paulo Eduardo Ambrósio, Bianca Machado Righi',
           venue: 'XXVIII National Meeting on Computational Modeling and XVI Meeting on Materials Science and Technology',
-          year: '2026',
-          url: 'https://www.even3.com.br/anais/enmc-2025/1268156-modelo-computacional-para-inferencia-de-dinamicas-sociais-em-cetaceos-a-partir-de-dados-videograficos-aereos',
+          year: '2025 — online in 2026',
+          url: './publications/enmc-2025/',
           description:
             'A paper on automated extraction of spatio-temporal dynamics of humpback whales from aerial footage, combining YOLOv8 for detection and DeepSORT for trajectory reconstruction. DOI: 10.5281/zenodo.18938636.',
         },
@@ -407,11 +407,11 @@ export const content = {
         },
         {
           type: 'Proceedings',
-          year: '2026',
+          year: '2025 — online in 2026',
           title: 'ENMC / ECTM',
           description:
             'Full paper on a computational model for inferring social dynamics in cetaceans from aerial video data.',
-          url: 'https://www.even3.com.br/anais/enmc-2025/1268156-modelo-computacional-para-inferencia-de-dinamicas-sociais-em-cetaceos-a-partir-de-dados-videograficos-aereos',
+          url: './publications/enmc-2025/',
         },
         {
           type: 'Presentation',
@@ -551,7 +551,7 @@ export const content = {
           featured: true,
           links: [
             { label: 'Detalles', url: './projects/cetacean-social-dynamics.html' },
-            { label: 'Articulo', url: 'https://www.even3.com.br/anais/enmc-2025/1268156-modelo-computacional-para-inferencia-de-dinamicas-sociais-em-cetaceos-a-partir-de-dados-videograficos-aereos', external: true },
+            { label: 'Articulo', url: './publications/enmc-2025/' },
           ],
         },
         {
@@ -610,11 +610,11 @@ export const content = {
       cite: 'Citar',
       items: [
         {
-          title: 'Modelo computacional para inferencia de dinamicas sociais em cetaceos a partir de dados videograficos aereos',
-          authors: 'Reinan Lopes Argolo, Lucas Santiago Carmo dos Santos, Susana Marrero Iglesias, Paulo Eduardo Ambrosio, Bianca Machado Righi',
+          title: 'Modelo computacional para inferência de dinâmicas sociais em cetáceos a partir de dados videográficos aéreos',
+          authors: 'Reinan Lopes Argolo, Lucas Santiago Carmo dos Santos, Susana Marrero Iglesias, Paulo Eduardo Ambrósio, Bianca Machado Righi',
           venue: 'XXVIII Encuentro Nacional de Modelado Computacional y XVI Encuentro de Ciencia y Tecnologia de Materiales',
-          year: '2026',
-          url: 'https://www.even3.com.br/anais/enmc-2025/1268156-modelo-computacional-para-inferencia-de-dinamicas-sociais-em-cetaceos-a-partir-de-dados-videograficos-aereos',
+          year: '2025 — online en 2026',
+          url: './publications/enmc-2025/',
           description:
             'Trabajo sobre la extraccion automatizada de dinamicas espacio-temporales de ballenas jorobadas a partir de filmaciones aereas, combinando YOLOv8 para deteccion y DeepSORT para reconstruccion de trayectorias. DOI: 10.5281/zenodo.18938636.',
         },
@@ -644,11 +644,11 @@ export const content = {
         },
         {
           type: 'Anales',
-          year: '2026',
+          year: '2025 — online en 2026',
           title: 'ENMC / ECTM',
           description:
             'Trabajo completo sobre un modelo computacional para inferir dinamicas sociales en cetaceos desde datos videograficos aereos.',
-          url: 'https://www.even3.com.br/anais/enmc-2025/1268156-modelo-computacional-para-inferencia-de-dinamicas-sociais-em-cetaceos-a-partir-de-dados-videograficos-aereos',
+          url: './publications/enmc-2025/',
         },
         {
           type: 'Presentacion',
